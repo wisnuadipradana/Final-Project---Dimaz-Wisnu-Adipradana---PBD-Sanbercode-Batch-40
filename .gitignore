@@ -1,0 +1,26 @@
+# ignores all ipynb files
+.ipynb_checkpoints
+
+#ignore file ipynb
+
+#ignore txt file
+
+#ignore csv file
+
+#ignore json file
+
+#ignore gitignore file
+
+#ignore Pdf file
+
+#ignore env
+TugasAkhir.env
+
+#ignore folder
+
+
+#ignore python file
+__init__.py
+__pycache__/
+
+# ignore sql file
