@@ -104,14 +104,60 @@ conn = engine.connect()
 @app.post("/tabel/{nama_tabel}")
 async def tampilkan_isi_tabel(users_csvfile: UploadFile = File(...), 
                           products_csvfile: UploadFile = File(...),
-                          nama_tabel = None
+                          nama_tabel = str
                          ):
     tabel_sql_jadi(users_csvfile,products_csvfile)
     
     return conn.execute(f'select * from {nama_tabel.lower()}').all()
-        
+
+# Menampilkan semua barang dengan urutan ascending (None, True, False)
+@app.post("/barang")
+async def tampilkan_barang(users_csvfile: UploadFile = File(...), 
+                          products_csvfile: UploadFile = File(...),
+                          sort_desc = None
+                         ):
+    tabel_sql_jadi(users_csvfile,products_csvfile)
+    
+    result = session.query(Products.product_name).all()
+    session.commit()
+    
+    produk = [i[0] for i in result]
+    if sort_desc==None:
+        pass
+    elif sort_desc.lower() == 'true':
+        produk.sort(reverse=False)
+    elif sort_desc.lower() == 'false':
+        produk.sort(reverse=True)
+    return produk
+
+# Menampilkan semua barang yang bernama <nama_barang> dengan urutan ascending (None, True, False)
+@app.post("/search_barang/{nama_barang}")
+async def tampilkan_barang(users_csvfile: UploadFile = File(...), 
+                          products_csvfile: UploadFile = File(...),
+                          nama_barang = '',
+                          sort_desc = None
+                         ):
+    tabel_sql_jadi(users_csvfile,products_csvfile)
+    
+    result = session.query(Products.product_name).all()
+    session.commit()
+
+    produk = [i[0] for i in result]
+    cari_barang = []
+    for i in produk:
+        if nama_barang.lower() in i.lower():
+             cari_barang.append(i)
+
+    if sort_desc==None:
+        pass
+    elif sort_desc.lower() == 'true':
+        cari_barang.sort(reverse=False)
+    elif sort_desc.lower() == 'false':
+        cari_barang.sort(reverse=True)
+    return cari_barang
+
+
+
 if __name__ == "__main__":
     uvicorn.run(app)
-    
-    
     
