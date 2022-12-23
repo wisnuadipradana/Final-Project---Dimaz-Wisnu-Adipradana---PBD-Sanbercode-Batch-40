@@ -15,10 +15,15 @@ Akun Telegram: <a href="https://t.me/uzumakinagatotenshou">@wisnuduzu</a>
 Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/wisnuadipradana17_Tugas_Akhir.py">wisnuadipradana17_Tugas_Akhir.py</a></br>
 
 <details>
-<summary><strong>Pennjelasan Data</strong></summary>
+<summary><strong>Penjelasan Data</strong></summary>
 Pertama diberikan data users dan products yang diperlihatkan pada gambar berikut:<br>
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/GtBc1p4J/Capture.jpg' border='0' alt='Capture'/></a><br>
   
-<details/>
+![Tabel users](https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG)
+<br>
+  
+![Tabel Products](https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20products.JPG)
+<br>  
+  
+
   
 
