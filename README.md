@@ -1,4 +1,4 @@
-# Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40
+# Final Project Dimaz Wisnu Adipradana PBD-Sanbercode-Batch-40
 
 ## Data Peserta Bootcamp Digital Skill - Python Backend Development
 Nama: Dimaz Wisnu Adipradana <br>
@@ -17,10 +17,10 @@ Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/w
 <details>
 <summary><strong>Penjelasan Data</strong></summary>
 Pertama diberikan data users dan products yang diperlihatkan pada gambar berikut:<br>
-  
+  Tabel Users
 ![Tabel users](https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG)
 <br>
-  
+  Tabel Products
 ![Tabel Products](https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20products.JPG)
 <br>  
   
