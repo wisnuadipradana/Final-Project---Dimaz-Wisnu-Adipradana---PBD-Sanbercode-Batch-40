@@ -10,4 +10,15 @@ Sistem Operasi yang digunakan: <img src="https://img.shields.io/badge/Windows%20
 Akun Gitlab/Github: <a href="https://gitlab.com/wisnuadipradana" target="blank"><img src="https://img.shields.io/badge/gitlab-%23330f63.svg?&style=for-the-badge&logo=gitlab&logoColor=white" ></a> / <a href="https://github.com/wisnuadipradana"><img src="https://img.shields.io/github/followers/wisnuadipradana?label=wisnuadipradana&amp;style=social" style="max-width:100%;"></a> <br>
 Akun Telegram: <a href="https://t.me/uzumakinagatotenshou">@wisnuduzu</a> 
 
+## Penjelasan Final Project
+
+Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/wisnuadipradana17_Tugas_Akhir.py">wisnuadipradana17_Tugas_Akhir.py</a></br>
+
+<details>
+<summary><strong>Pennjelasan Data</strong></summary>
+Pertama diberikan data users dan products yang diperlihatkan pada gambar berikut:<br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/GtBc1p4J/Capture.jpg' border='0' alt='Capture'/></a><br>
+  
+<details/>
+  
 
