@@ -17,9 +17,20 @@ Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/w
 <details>
 <summary><strong>Penjelasan Data</strong></summary>
 Pertama diberikan data users dan products yang diperlihatkan pada gambar berikut:<br>
-![Tabel users](https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG)
+Table users <br>
+Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
+- customer_id : nomor urut id untuk pembeli dalam format integer <br> 
+- name : nama pembeli dalam format string <br>
+- city : kota tempat tinggal pembeli dalam format string <br>
+- state : negara tempat tinggal pembeli dalam format string <br>
+- postal :  kode pos dari tempat tinggal pembeli dalam format integer
+
 <br>
-![Tabel Products](https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20products.JPG)
+<img src="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG">
+<br>
+Table Products
+<br>
+<img src=https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20products.JPG>
 <br>  
   
 
