@@ -38,6 +38,7 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
 <br>
 <img src=https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20products.JPG>
 <br>  
+</details>
   
 <details>
 <summary><strong>Penjelasan Tabel purchase</strong></summary>
@@ -51,3 +52,4 @@ Diberikan hasil tabel berupa gambarnya sebagai berikut:
 <br>
 <img src=https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20purchase.JPG>
 <br>  
+</details>
