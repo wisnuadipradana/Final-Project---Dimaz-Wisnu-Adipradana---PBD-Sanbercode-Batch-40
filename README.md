@@ -23,16 +23,23 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
 - name : nama pembeli dalam format string <br>
 - city : kota tempat tinggal pembeli dalam format string <br>
 - state : negara tempat tinggal pembeli dalam format string <br>
-- postal :  kode pos dari tempat tinggal pembeli dalam format integer
+- postal :  kode pos dari tempat tinggal pembeli dalam format integer<br>
 
 <br>
 <img src="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG">
 <br>
-Table Products
+Table products <br>
+Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
+- product_id : nomor urut id produk dalam format integer <br> 
+- product_name : nama produk dalam format string <br>
+- category : kategori produk dalam format string <br>
+- sub_category : sub kategori produk dalam format string <br>
+
 <br>
 <img src=https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20products.JPG>
 <br>  
   
-
+<details>
+<summary><strong>Penjelasan Tabel purchase</strong></summary>
   
 
