@@ -43,13 +43,15 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
 <details>
 <summary><strong>Penjelasan Tabel purchase</strong></summary>
 Dari tabel users dan tabel products akan dibuat tabel purchase yang memiliki nama kolom dengan penjelasannya sebagai berikut:<br>
-- date : tanggal pembelian dalam format datetime <br>
+- date : tanggal pembelian dalam format datetime dilakukan dengan mengambil random tanggal dari tahun 2017 hingga 17-12-2022<br>
 - name : nama pembeli dalam format string yang merupakan primary key yang berhubungan dengan tabel users <br>
 - product_name : nama produk dalam format string yang merupakan primary key yang berhubungan dengan tabel products <br>
-- quantity : jumlah barang yang dibeli dari produk_name dalam format integer <br>
+- quantity : jumlah barang yang dibeli dari produk_name dalam format integer dengan mengambil random bilangan asli dari 1-25<br>
 
 Diberikan hasil tabel berupa gambarnya sebagai berikut:
 <br>
 <img src=https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20purchase.JPG>
 <br>  
 </details>
+
+- Kemudian, menggunakan 
