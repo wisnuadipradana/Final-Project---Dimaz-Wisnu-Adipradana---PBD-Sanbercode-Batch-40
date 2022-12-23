@@ -54,4 +54,6 @@ Diberikan hasil tabel berupa gambarnya sebagai berikut:
 <br>  
 </details>
 
-- Kemudian, menggunakan 
+- Kemudian, datanya dimasukkan ke dalam database sql.
+- Kemudian, menggunakan sqlalchemy ORM untuk mengambil data yang ada pada sql tersebut.
+- Digunakan FastAPI untuk melakukan RestAPI.
