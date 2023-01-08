@@ -16,6 +16,7 @@ Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/w
 <details>
 <summary><strong>Penjelasan Data</strong></summary>
 Pertama diberikan data users dan products yang diperlihatkan pada gambar berikut:<br>
+<br>
 <b>Table users</b> <br>
 Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 
@@ -26,7 +27,7 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 - postal :  kode pos dari tempat tinggal pembeli dalam format integer<br>
 
 <br>
-<img src="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG">
+<img src="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG"><br>
 <br>
 <b>Table products</b> <br>
 Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
@@ -67,8 +68,12 @@ dan <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adip
 Berikut adalah penjelasan tiap route FastAPI yang dibuat dan karena dilakukan autentifikasi menggunakan Json Web Token atau disingkat JWT pada FastAPI yang bertujuan memproteksi dengan key bearer berbentuk token untuk bisa mengakses route-route tertentu.<br>
 
 - Pertama, jalankan program <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tugas%20Akhir.py">Tugas_Akhir.py</a>. 
-- Kemudian buka link http://localhost:8000/ pada browser kalian sehingga tampilannya akan muncul seperti ini 
-![localhost8000](https://user-images.githubusercontent.com/49567907/211193433-9a252c07-6b65-4f93-ab13-2399ae6350ee.JPG)
+- Route `get("/")` dengan fungsi `tugas_akhir` dapat dibuka melalui link http://localhost:8000/ pada browser kalian sehingga tampilannya akan muncul sebagai berikut 
+![localhost8000](https://user-images.githubusercontent.com/49567907/211193433-9a252c07-6b65-4f93-ab13-2399ae6350ee.JPG)<br>
+Karena route `post("/barang")` dan `post("cari_nama_barang/{nama_barang}")` tidak perlu autentifikasi dengan JWT maka dapat langsung kita lihat hasil post melalui link berikut http://localhost:8000/docs#/. Link tersebut merupakan dokumentasi dengan swagger yang tersedia langsung jika menggunakan FastAPI, tampilannya akan muncul sebagai berikut
+![localhost8000,docs#](https://user-images.githubusercontent.com/49567907/211194205-241889c7-9f0c-428e-93f1-a601d1ab39f7.JPG)
+- Route `post("/barang")` dengan fungsi `tampilkan_barang` pada link tersebut memiliki variabel upload dokumen dari `users.csv` dan `products.csv` serta terdapat variabel `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Tampilannya akan muncul sebagai berikut.
+![image](https://user-images.githubusercontent.com/49567907/211194435-d9fe4cce-af28-414d-ac31-f8d32fc77bbc.png)
 
 
 </details>
