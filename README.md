@@ -27,10 +27,10 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 - postal :  kode pos dari tempat tinggal pembeli dalam format integer<br>
 
 <br>
-<img src="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG"><br>
+![Tabel users](https://user-images.githubusercontent.com/49567907/211194716-791e152a-69ec-4cca-ae48-6f82f2f8e96e.JPG)<br>
 <br>
 <b>Table products</b> <br>
-Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
+Pada tabel products terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 
 - product_id : nomor urut id produk dalam format integer <br> 
 - product_name : nama produk dalam format string yang merupakan primary key <br>
@@ -38,7 +38,7 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 - sub_category : sub kategori produk dalam format string <br>
 
 <br>
-<img src=https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20products.JPG>
+![Tabel products](https://user-images.githubusercontent.com/49567907/211194758-afbdeee4-bac2-4a97-9e08-393b68745127.JPG)
 <br>  
 </details>
   
@@ -53,11 +53,16 @@ Dari tabel users dan tabel products akan dibuat tabel purchase yang memiliki nam
 
 Diberikan hasil tabel berupa gambarnya sebagai berikut:
 <br>
-<img src=https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20purchase.JPG>
+![Tabel purchase](https://user-images.githubusercontent.com/49567907/211194764-bdd389da-ab4c-4b88-85b9-4207eba3f0be.JPG)
 <br>  
 </details>
 
 Data ketiga tabel tersebut dimasukkan ke dalam database SQL menggunakan modul pada Python yaitu SQLAlchemy yang dibuat di dalam fungsi `tabel_sql_jadi`.<br>
+Tabel yang telah tersimpan ke dalam sql tersimpan seperti pada file 
+<a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/users.sql">users.sql</a>,
+<a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/products.sql">products.sql</a>, dan
+<a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/purchase.sql">purchase.sql</a>.
+
 
 Nah selanjutnya, tujuan dari tugas ini adalah menggunakan FastAPI untuk melakukan RestAPI.<br> Route-route POST yang dibuat dari FastAPI akan menggunggah file 
 <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/users.csv">users.csv</a>
