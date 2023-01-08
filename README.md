@@ -88,7 +88,7 @@ Selanjutnya, karena route-route lain membutuhkan akses dari autentikasi dengan J
 <br>
 
 - Route `post("/login")` dengan fungsi `login` pada link http://localhost:8000/login memiliki parameter  `Account` yang merupakan tempat penyimpanan database kumpulan akun dengan username, email dan password yang tersimpan. Pada code ini diberikan contoh akun pada list dengan dictionary `akun`. Kemudian, terdapat parameter AuthJWT yang digunakan untuk autentikasi dengan JWT.<br>
-Pada Postman di bagian body dan pilih form data, kemudian isi key dan value sesuai seperti gambar berikut.
+Pada Postman di bagian body dan pilih form data, kemudian isi key dan value(upload file csv) sesuai seperti gambar berikut.
 ![image](https://user-images.githubusercontent.com/49567907/211197574-590587be-c5d6-4c23-b8d7-dbeecaa2e239.png)
 Kemudian, pada bagian body di Postman, pilih headers. Nah, di sini isi key dengan `Content-Type` dan value dengan `application/json` seperti pada gambar berikut.<br>
 <img src="https://user-images.githubusercontent.com/49567907/211209405-67c64384-a6ea-428a-ae08-1a82019d6ff5.png"></img>
@@ -105,7 +105,14 @@ Dari token yang didapat salin dan tempel ke menu `Authorization` dan pilih tipen
 
 - Route `get('\user')` dengan fungsi `user` pada link http://localhost:8000/user memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT. Pada route ini bertujuan untuk mengetahui username, email, dan password yang digunakan pada waktu login sebelumnya. Hasilnya seperti pada gambar berikut.
 <img src="https://user-images.githubusercontent.com/49567907/211208651-0a7c3a55-410a-40d7-a6aa-563621cbf61d.png"></img>
-- Route `post("/tabel/{nama_tabel}")` dengan fungsi `mencari_barang` pada link tersebut memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `nama_barang` yaitu nama dari barang yang akan dicari juga terdapat query parameter `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Tampilannya akan muncul sebagai berikut.
+
+Pada route-route di bawah ini perlu diperhatikan beberapa hal pada aplikasi Postman, yaitu di bagian Headers di kosongkan(tidak usah di centang apapun) dan pada bagian Body pada menu raw dikosongkan juga.
+
+- Route `post("/tabel/{nama_tabel}")` dengan fungsi `tampilkan_isi_tabel` pada link tersebut memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `nama_tabel` yaitu nama dari tabel `users`, `products`, atau `purchase` yang ingin ditampilkan. Route ini memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT.<br>
+Misalkan pada contoh ini akan ditampilkan tabel purchase maka Request URL nya adalah http://localhost:8000/tabel/purchase. Hasilnya seperti pada gambar berikut.
+<img src="https://user-images.githubusercontent.com/49567907/211209725-8396dd42-1ff9-4bb2-a967-2f574ae3b7e0.png"></img>
+
+
 
 
 
