@@ -96,8 +96,7 @@ Selanjutnya, pada bagian body di Postman, pilih raw. Nah, di sini kalian isikan 
 <code>{
     "username_or_email": "&lt;isi dengan username atau email yang terdaftar&gt;",
     "password": "&lt;isi dengan password dari username atau email sebelumnya&gt;"
-}
-</code>
+}</code><br>
 Kemudian, klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.<br>
 <img src="https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png"><br>
 Dari token yang didapat salin dan tempel ke menu `Authorization` dan pilih tipenya adalah Bearer Token pada Postman seperti gambar berikut.
@@ -108,10 +107,15 @@ Dari token yang didapat salin dan tempel ke menu `Authorization` dan pilih tipen
 
 Pada route-route di bawah ini perlu diperhatikan beberapa hal pada aplikasi Postman, yaitu di bagian Headers di kosongkan(tidak usah di centang apapun) dan pada bagian Body pada menu raw dikosongkan juga.
 
-- Route `post("/tabel/{nama_tabel}")` dengan fungsi `tampilkan_isi_tabel` pada link tersebut memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `nama_tabel` yaitu nama dari tabel `users`, `products`, atau `purchase` yang ingin ditampilkan. Route ini memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT.<br>
+- Route `post("/tabel/{nama_tabel}")` dengan fungsi `tampilkan_isi_tabel` pada route ini menampilkan isi dari salah satu dari ketiga tabel yang telah di simpan pada sql sebelumnya. Route ini memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `nama_tabel` yaitu nama dari tabel `users`, `products`, atau `purchase` yang ingin ditampilkan. Route ini memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT.<br>
 Misalkan pada contoh ini akan ditampilkan tabel purchase maka Request URL nya adalah http://localhost:8000/tabel/purchase. Hasilnya seperti pada gambar berikut.
 <img src="https://user-images.githubusercontent.com/49567907/211209725-8396dd42-1ff9-4bb2-a967-2f574ae3b7e0.png"></img>
-
+- Route `post("/pembeli")` dengan fungsi `tampilkan_tempat_tinggal_pembeli` pada route ini menampilkan semua nama pembeli beserta kota dan negaranya yang bisa diurutkan berdasarkan nama pembeli. Route ini memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Route ini memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT. Hasilnya seperti pada gambar berikut.
+<img src="https://user-images.githubusercontent.com/49567907/211210222-1c809b92-83e2-4d0b-8bab-9e65773ef3d7.png"></img>
+- Route `post("/pembeli_terbanyak")` dengan fungsi `tampilkan_tempat_tinggal_n_pembeli_terbanyak` pada route ini menampilkan n orang dengan jumlah pembelian terbanyak beserta nama barang yang telah dibeli. Route ini memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `banyaknya_orang_yang_ditampilkan` yang bernilai integer yang merupakan banyaknya pembeli terbanyak yang ingin ditampilkan. Route ini memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT. Hasilnya seperti pada gambar berikut.
+<img src="https://user-images.githubusercontent.com/49567907/211210837-b8a4687b-9bb5-4322-93b7-a28c2e64ba51.png"></img>
+- Route `post("/transaksi_individu")` dengan fungsi `transaksi_tiap_customer_id` pada route ini menampilkan transaksi yang telah dilakukan tiap `customer_id` dengan data kumpulan tanggal pembelian, nama pembeli, dan barang-barang yang telah dibeli. Route ini memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `customer_id` yang bernilai integer yang merupakan id dari pembeli yang tercatat pada tabel di `users.csv`. Route ini memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT. Hasilnya seperti pada gambar berikut.
+<img src="https://user-images.githubusercontent.com/49567907/211211070-1dce06e6-15f0-4edd-b2dc-2a21b4e43578.png"></img>
 
 
 
