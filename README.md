@@ -77,9 +77,10 @@ Berikut adalah penjelasan tiap route FastAPI yang dibuat dan karena dilakukan au
 ![localhost8000](https://user-images.githubusercontent.com/49567907/211193433-9a252c07-6b65-4f93-ab13-2399ae6350ee.JPG)<br>
 Karena route `post("/barang")` dan `post("cari_nama_barang/{nama_barang}")` tidak perlu autentifikasi dengan JWT maka dapat langsung kita lihat hasil post melalui link berikut http://localhost:8000/docs#/. Link tersebut merupakan dokumentasi dengan swagger yang tersedia langsung jika menggunakan FastAPI, tampilannya akan muncul sebagai berikut
 ![localhost8000,docs#](https://user-images.githubusercontent.com/49567907/211194205-241889c7-9f0c-428e-93f1-a601d1ab39f7.JPG)
-- Route `post("/barang")` dengan fungsi `tampilkan_barang` pada link tersebut memiliki variabel upload dokumen dari `users.csv` dan `products.csv` serta terdapat variabel `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Tampilannya akan muncul sebagai berikut.
+- Route `post("/barang")` dengan fungsi `tampilkan_barang` pada link tersebut memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Tampilannya akan muncul sebagai berikut.
 ![image](https://user-images.githubusercontent.com/49567907/211194435-d9fe4cce-af28-414d-ac31-f8d32fc77bbc.png)
-
+- Route `post("/cari_nama_barang")` dengan fungsi `mencari_barang` pada link tersebut memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `nama_barang` yaitu nama dari barang yang akan dicari juga terdapat query parameter `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Tampilannya akan muncul sebagai berikut.
+![localhost8000,cari_nama_barang](https://user-images.githubusercontent.com/49567907/211195886-14f501fd-54a0-44f8-be71-613e8123051c.JPG)
 
 </details>
 
