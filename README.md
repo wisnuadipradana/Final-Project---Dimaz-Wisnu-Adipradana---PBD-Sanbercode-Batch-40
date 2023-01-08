@@ -98,7 +98,11 @@ Kemudian, pada bagian body di Postman, pilih raw. Nah, di sini kalian isikan den
 }
 </code>
 Kemudian, klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.<br>
-<img src="https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png">
+<img src="https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png"><br>
+Dari token yang didapat salin dan tempel ke menu `Authorization` pada Postman seperti gambar berikut.
+<img src="https://user-images.githubusercontent.com/49567907/211208179-9c6a9e48-639a-4bfa-8bff-ba62ec958ff6.png">
+
+
 
 
 
