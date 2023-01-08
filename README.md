@@ -59,5 +59,10 @@ Nah selanjutnya, tujuan dari tugas ini adalah menggunakan FastAPI untuk melakuka
 <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/users.csv">users.csv</a>
 dan <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/products.csv">products.csv</a>
 
-
+<details>
+<summary><strong>Penjelasan Route</strong></summary>
+Berikut adalah penjelasan tiap route FastAPI yang dibuat dan karena dilakukan autentifikasi menggunakan Json Web Token atau disingkat JWT pada FastAPI yang bertujuan memproteksi dengan key bearer berbentuk token untuk bisa mengakses route-route tertentu.
+- Pertama, jalankan program <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tugas%20Akhir.py">Tugas_Akhir.py</a>. 
+- Kemudian buka link http://localhost:8000/ pada browser kalian sehingga tampilannya akan muncul seperti ini <img src=https://>
+</details>
 
