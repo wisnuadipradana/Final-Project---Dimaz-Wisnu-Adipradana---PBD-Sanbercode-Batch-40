@@ -96,8 +96,8 @@ Kemudian, pada bagian body di Postman, pilih raw. Nah, di sini kalian isikan den
     "username_or_email": <isi dengan username atau email yang terdaftar>,
     "password": <isi dengan password dari username atau email sebelumnya>
 }`
-Kemudian, hasilnya klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.
-![image](https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png)
+Kemudian, hasilnya klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.<br>
+<img src="https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png">
 
 </details>
 
