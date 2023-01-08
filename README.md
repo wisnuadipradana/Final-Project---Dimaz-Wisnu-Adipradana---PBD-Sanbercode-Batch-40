@@ -99,5 +99,11 @@ Kemudian, pada bagian body di Postman, pilih raw. Nah, di sini kalian isikan den
 Kemudian, hasilnya klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.<br>
 <img src="https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png">
 
+`
+def hello_world():
+    print("Hello, World!")
+
+hello_world()
+`
 </details>
 
