@@ -92,18 +92,15 @@ Pada Postman di bagian body dan pilih form data, kemudian isi key dan value sesu
 ![image](https://user-images.githubusercontent.com/49567907/211197574-590587be-c5d6-4c23-b8d7-dbeecaa2e239.png)
 <br>
 Kemudian, pada bagian body di Postman, pilih raw. Nah, di sini kalian isikan dengan format sebagai berikut.<br>
-`{
-    "username_or_email": <isi dengan username atau email yang terdaftar>,
-    "password": <isi dengan password dari username atau email sebelumnya>
-}`
-Kemudian, hasilnya klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.<br>
+<code>{
+    "username_or_email": "&lt;isi dengan username atau email yang terdaftar&gt;",
+    "password": "&lt;isi dengan password dari username atau email sebelumnya&gt;"
+}
+</code>
+Kemudian, klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.<br>
 <img src="https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png">
 
-`
-def hello_world():
-    print("Hello, World!")
 
-hello_world()
-`
+
 </details>
 
