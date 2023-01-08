@@ -211,7 +211,7 @@ async def tampilkan_isi_tabel(users_csv: UploadFile = File(...),
     session.commit()
     session.close()
 
-# Menampilkan semua barang dengan urutan ascending (None, True, False)
+# Menampilkan semua barang dengan urutan descending (None, True, False)
 @app.post("/barang")
 async def tampilkan_barang(users_csv: UploadFile = File(...), 
                           products_csv: UploadFile = File(...),
@@ -233,7 +233,7 @@ async def tampilkan_barang(users_csv: UploadFile = File(...),
     session.commit()
     session.close()
 
-# Menampilkan semua barang yang bernama <nama_barang> dengan urutan ascending (None, True, False)
+# Menampilkan semua barang yang bernama <nama_barang> dengan urutan descending (None, True, False)
 @app.post("/cari_nama_barang/{nama_barang}")
 async def mencari_barang(users_csv: UploadFile = File(...), 
                           products_csv: UploadFile = File(...),
@@ -264,7 +264,7 @@ async def mencari_barang(users_csv: UploadFile = File(...),
     session.commit()
     session.close()
 
-# Menampilkan semua orang <nama_pembeli> berserta kota dan negaranya dengan urutan ascending (None, True, False)
+# Menampilkan semua orang <nama_pembeli> berserta kota dan negaranya dengan urutan descending (None, True, False)
 @app.post("/pembeli")
 async def tampilkan_tempat_tinggal_pembeli(users_csv: UploadFile = File(...), 
                                          products_csv: UploadFile = File(...),
@@ -299,7 +299,7 @@ async def tampilkan_tempat_tinggal_pembeli(users_csv: UploadFile = File(...),
     session.close()
 
     
-# Menampilkan <n> orang dengan total pembelian terbanyak berserta nama barangnya
+# Menampilkan <n> orang dengan jumlah pembelian terbanyak berserta nama barangnya
 @app.post("/pembeli_terbanyak")
 async def tampilkan_tempat_tinggal_n_pembeli_terbanyak(users_csv: UploadFile = File(...), 
                                                         products_csv: UploadFile = File(...),
