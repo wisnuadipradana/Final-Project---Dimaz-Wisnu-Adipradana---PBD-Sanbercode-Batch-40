@@ -116,12 +116,12 @@ def tabel_sql_jadi(users_csv,products_csv):
         df_purchase.to_sql('purchase', engine, if_exists='replace', index=False)
     
 
-
 # process JWT
 class Account(BaseModel):
     username_or_email: str
     password: str
 
+# Misalnya kumpulan akun yang terdaftar tersimpan dalam database akun berikut
 akun = [
     {
         "id": 7,
