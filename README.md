@@ -70,17 +70,27 @@ dan <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adip
 
 <details>
 <summary><strong>Penjelasan Route</strong></summary>
-Berikut adalah penjelasan tiap route FastAPI yang dibuat dan karena dilakukan autentifikasi menggunakan Json Web Token atau disingkat JWT pada FastAPI yang bertujuan memproteksi dengan key bearer berbentuk token untuk bisa mengakses route-route tertentu.<br>
+Berikut adalah penjelasan tiap route FastAPI yang dibuat dan karena dilakukan autentikasi menggunakan Json Web Token atau disingkat JWT pada FastAPI yang bertujuan memproteksi dengan key bearer berbentuk token untuk bisa mengakses route-route tertentu.<br>
 
 - Pertama, jalankan program <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tugas%20Akhir.py">Tugas_Akhir.py</a>. 
 - Route `get("/")` dengan fungsi `tugas_akhir` dapat dibuka melalui link http://localhost:8000/ pada browser kalian sehingga tampilannya akan muncul sebagai berikut 
 ![localhost8000](https://user-images.githubusercontent.com/49567907/211193433-9a252c07-6b65-4f93-ab13-2399ae6350ee.JPG)<br>
-Karena route `post("/barang")` dan `post("cari_nama_barang/{nama_barang}")` tidak perlu autentifikasi dengan JWT maka dapat langsung kita lihat hasil post melalui link berikut http://localhost:8000/docs#/. Link tersebut merupakan dokumentasi dengan swagger yang tersedia langsung jika menggunakan FastAPI, tampilannya akan muncul sebagai berikut
-![localhost8000,docs#](https://user-images.githubusercontent.com/49567907/211194205-241889c7-9f0c-428e-93f1-a601d1ab39f7.JPG)
+
+Karena route `post("/barang")` dan `post("cari_nama_barang/{nama_barang}")` tidak perlu autentikasi dengan JWT maka dapat langsung kita lihat hasil post melalui link berikut http://localhost:8000/docs#/. Link tersebut merupakan dokumentasi dengan swagger yang tersedia langsung jika menggunakan FastAPI, tampilannya akan muncul sebagai berikut
+![localhost8000,docs#](https://user-images.githubusercontent.com/49567907/211194205-241889c7-9f0c-428e-93f1-a601d1ab39f7.JPG)<br>
+
 - Route `post("/barang")` dengan fungsi `tampilkan_barang` pada link tersebut memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Tampilannya akan muncul sebagai berikut.
 ![image](https://user-images.githubusercontent.com/49567907/211194435-d9fe4cce-af28-414d-ac31-f8d32fc77bbc.png)
 - Route `post("/cari_nama_barang")` dengan fungsi `mencari_barang` pada link tersebut memiliki parameter upload dokumen dari `users.csv` dan `products.csv` serta terdapat query parameter `nama_barang` yaitu nama dari barang yang akan dicari juga terdapat query parameter `sort_desc` yang bernilai `True` jika diinginkan pengurutan dari besar ke kecil, `False` jika diinginkan pengurutan dari kecil ke besar, dan `None` jika tidak ingin diurutkan. Tampilannya akan muncul sebagai berikut.
-![localhost8000,cari_nama_barang](https://user-images.githubusercontent.com/49567907/211195886-14f501fd-54a0-44f8-be71-613e8123051c.JPG)
+![localhost8000,cari_nama_barang](https://user-images.githubusercontent.com/49567907/211195886-14f501fd-54a0-44f8-be71-613e8123051c.JPG)<br>
+
+Selanjutnya, karena route-route lain membutuhkan akses dari autentikasi dengan JWT, maka dari route `post('/login)` akan diambil authorization berupa token bearer kemudian digunakan untuk masuk ke route-route lain. Dibutuhkan aplikasi penunjang untuk melakukan request HTTP diantaranya menggunakan Postman, Insomnia, cURL, HTTPie, Advanced REST Client, Swagger UI. Pada kesempatan kali ini akan digunakan aplikasi Postman.
+<br>
+
+- Route `post("/login")` dengan fungsi `login` pada link tersebut memiliki parameter  `Account` yang merupakan tempat penyimpanan database kumpulan akun dengan username, email dan password yang tersimpan. Pada code ini diberikan contoh akun pada list dengan dictionary `akun`. Kemudian, terdapat parameter AuthJWT yang digunakan untuk autentikasi dengan JWT.<br>
+Pada Postman di bagian body dan pilih form data, kemudian isi key dan value sesuai seperti gambar berikut
+![image](https://user-images.githubusercontent.com/49567907/211197477-e444c4f0-97a5-4366-a242-c33ba04976f1.png)
+
 
 </details>
 
