@@ -17,7 +17,7 @@ Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/w
 <summary><strong>Penjelasan Data</strong></summary>
 Pertama diberikan data users dan products yang diperlihatkan pada gambar berikut:<br>
 <br>
-<b>Table users</b> <br>
+<b><strong>Table users</strong></b> <br>
 Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 
 - customer_id : nomor urut id untuk pembeli dalam format integer <br> 
@@ -29,7 +29,7 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 <br>
 <img src="https://user-images.githubusercontent.com/49567907/211195252-9c27682a-063d-479d-9fb5-52e66f2794d1.JPG">
 </br>
-<b>Table products</b> <br>
+<b><strong>Table products</strong></b> <br>
 Pada tabel products terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 
 - product_id : nomor urut id produk dalam format integer <br> 
@@ -100,7 +100,12 @@ Kemudian, pada bagian body di Postman, pilih raw. Nah, di sini kalian isikan den
 Kemudian, klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.<br>
 <img src="https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png"><br>
 Dari token yang didapat salin dan tempel ke menu `Authorization` pada Postman seperti gambar berikut.
-<img src="https://user-images.githubusercontent.com/49567907/211208179-9c6a9e48-639a-4bfa-8bff-ba62ec958ff6.png">
+<img src="https://user-images.githubusercontent.com/49567907/211208179-9c6a9e48-639a-4bfa-8bff-ba62ec958ff6.png"></img>
+<details>
+<summary>Route `get('\user')`</summary>
+Route `get('\user')` dengan fungsi `user` pada link http://localhost:8000/user memiliki parameter AuthJWT yang digunakan untuk autentikasi token yang diperoleh sebelumnya dengan JWT. Pada route ini bertujuan untuk mengetahui username, email, dan password yang digunakan pada waktu login sebelumnya. Hasilnya seperti pada gambar berikut.
+<img src="https://user-images.githubusercontent.com/49567907/211208651-0a7c3a55-410a-40d7-a6aa-563621cbf61d.png">
+</details>
 
 
 
