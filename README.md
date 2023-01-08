@@ -87,10 +87,17 @@ Karena route `post("/barang")` dan `post("cari_nama_barang/{nama_barang}")` tida
 Selanjutnya, karena route-route lain membutuhkan akses dari autentikasi dengan JWT, maka dari route `post('/login)` akan diambil authorization berupa token bearer kemudian digunakan untuk masuk ke route-route lain. Dibutuhkan aplikasi penunjang untuk melakukan request HTTP diantaranya menggunakan Postman, Insomnia, cURL, HTTPie, Advanced REST Client, Swagger UI. Pada kesempatan kali ini akan digunakan aplikasi Postman.
 <br>
 
-- Route `post("/login")` dengan fungsi `login` pada link tersebut memiliki parameter  `Account` yang merupakan tempat penyimpanan database kumpulan akun dengan username, email dan password yang tersimpan. Pada code ini diberikan contoh akun pada list dengan dictionary `akun`. Kemudian, terdapat parameter AuthJWT yang digunakan untuk autentikasi dengan JWT.<br>
+- Route `post("/login")` dengan fungsi `login` pada link http://localhost:8000/login memiliki parameter  `Account` yang merupakan tempat penyimpanan database kumpulan akun dengan username, email dan password yang tersimpan. Pada code ini diberikan contoh akun pada list dengan dictionary `akun`. Kemudian, terdapat parameter AuthJWT yang digunakan untuk autentikasi dengan JWT.<br>
 Pada Postman di bagian body dan pilih form data, kemudian isi key dan value sesuai seperti gambar berikut
-![image](https://user-images.githubusercontent.com/49567907/211197477-e444c4f0-97a5-4366-a242-c33ba04976f1.png)
-
+![image](https://user-images.githubusercontent.com/49567907/211197574-590587be-c5d6-4c23-b8d7-dbeecaa2e239.png)
+<br>
+Kemudian, pada bagian body di Postman, pilih raw. Nah, di sini kalian isikan dengan format sebagai berikut.<br>
+`{
+    "username_or_email": <isi dengan username atau email yang terdaftar>,
+    "password": <isi dengan password dari username atau email sebelumnya>
+}`
+Kemudian, hasilnya klik Send pada Postman sehingga hasilnya diperoleh bearer token yang diinginkan seperti pada gambar berikut.
+![image](https://user-images.githubusercontent.com/49567907/211197690-a16abf3e-3768-48ea-b9ca-a6bf533830e6.png)
 
 </details>
 
