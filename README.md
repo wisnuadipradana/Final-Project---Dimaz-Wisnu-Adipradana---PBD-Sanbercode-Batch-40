@@ -17,7 +17,8 @@ Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/w
 <summary><strong>Penjelasan Data</strong></summary>
 Pertama diberikan data users dan products yang diperlihatkan pada gambar berikut:<br>
 <b>Table users</b> <br>
-Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
+Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
+
 - customer_id : nomor urut id untuk pembeli dalam format integer <br> 
 - name : nama pembeli dalam format string yang merupakan primary key<br>
 - city : kota tempat tinggal pembeli dalam format string <br>
@@ -28,7 +29,8 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
 <img src="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tabel%20users.JPG">
 <br>
 <b>Table products</b> <br>
-Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
+Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
+
 - product_id : nomor urut id produk dalam format integer <br> 
 - product_name : nama produk dalam format string yang merupakan primary key <br>
 - category : kategori produk dalam format string <br>
@@ -42,6 +44,7 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:</br>
 <details>
 <summary><strong>Penjelasan Tabel purchase</strong></summary>
 Dari tabel users dan tabel products akan dibuat tabel purchase yang memiliki nama kolom dengan penjelasannya sebagai berikut:<br>
+
 - date : tanggal pembelian dalam format datetime dilakukan dengan mengambil random tanggal dari tahun 2017 hingga 17-12-2022<br>
 - name : nama pembeli dalam format string yang merupakan primary key yang berhubungan dengan tabel users <br>
 - product_name : nama produk dalam format string yang merupakan primary key yang berhubungan dengan tabel products <br>
@@ -61,8 +64,12 @@ dan <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adip
 
 <details>
 <summary><strong>Penjelasan Route</strong></summary>
-Berikut adalah penjelasan tiap route FastAPI yang dibuat dan karena dilakukan autentifikasi menggunakan Json Web Token atau disingkat JWT pada FastAPI yang bertujuan memproteksi dengan key bearer berbentuk token untuk bisa mengakses route-route tertentu.
+Berikut adalah penjelasan tiap route FastAPI yang dibuat dan karena dilakukan autentifikasi menggunakan Json Web Token atau disingkat JWT pada FastAPI yang bertujuan memproteksi dengan key bearer berbentuk token untuk bisa mengakses route-route tertentu.<br>
+
 - Pertama, jalankan program <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tugas%20Akhir.py">Tugas_Akhir.py</a>. 
-- Kemudian buka link http://localhost:8000/ pada browser kalian sehingga tampilannya akan muncul seperti ini <img src=https://>
+- Kemudian buka link http://localhost:8000/ pada browser kalian sehingga tampilannya akan muncul seperti ini 
+![localhost8000](https://user-images.githubusercontent.com/49567907/211193433-9a252c07-6b65-4f93-ab13-2399ae6350ee.JPG)
+
+
 </details>
 
