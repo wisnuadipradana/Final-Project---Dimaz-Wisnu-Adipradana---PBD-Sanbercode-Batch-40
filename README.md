@@ -27,8 +27,8 @@ Pada tabel users terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 - postal :  kode pos dari tempat tinggal pembeli dalam format integer<br>
 
 <br>
-![Tabel users](https://user-images.githubusercontent.com/49567907/211194716-791e152a-69ec-4cca-ae48-6f82f2f8e96e.JPG)<br>
-<br>
+<img src="https://user-images.githubusercontent.com/49567907/211195252-9c27682a-063d-479d-9fb5-52e66f2794d1.JPG">
+</br>
 <b>Table products</b> <br>
 Pada tabel products terdapat nama kolom dengan penjelasannya sebagai berikut:<br>
 
@@ -38,8 +38,8 @@ Pada tabel products terdapat nama kolom dengan penjelasannya sebagai berikut:<br
 - sub_category : sub kategori produk dalam format string <br>
 
 <br>
-![Tabel products](https://user-images.githubusercontent.com/49567907/211194758-afbdeee4-bac2-4a97-9e08-393b68745127.JPG)
-<br>  
+<img src="https://user-images.githubusercontent.com/49567907/211195244-bc7f1dff-0fcd-48c1-9262-e96afbf6ab30.JPG">
+</br>  
 </details>
   
 <details>
@@ -54,7 +54,7 @@ Dari tabel users dan tabel products akan dibuat tabel purchase yang memiliki nam
 Diberikan hasil tabel berupa gambarnya sebagai berikut:
 <br>
 ![Tabel purchase](https://user-images.githubusercontent.com/49567907/211194764-bdd389da-ab4c-4b88-85b9-4207eba3f0be.JPG)
-<br>  
+</br>  
 </details>
 
 Data ketiga tabel tersebut dimasukkan ke dalam database SQL menggunakan modul pada Python yaitu SQLAlchemy yang dibuat di dalam fungsi `tabel_sql_jadi`.<br>
