@@ -1,8 +1,7 @@
-# Final Project Dimaz Wisnu Adipradana PBD Sanbercode Batch 40
+# Final Project Dimaz Wisnu Adipradana Python Backend Development Sanbercode Batch 40
 
 ## Data Peserta Bootcamp Digital Skill - Python Backend Development
-Nama: Dimaz Wisnu Adipradana <br>
-Email: wisnuadipradana17@yahoo.com <br>
+Nama: Wisnu D. Uzu <br>
 Sistem Operasi yang digunakan: <img src="https://img.shields.io/badge/Windows%2010-%230078D6.svg?&amp;style=for-the-badge&amp;logo=windows&amp;logoColor=white" style="max-width:100%;">
   <img src="https://img.shields.io/badge/Core%20i7%208th-%230071C5.svg?&amp;style=for-the-badge&amp;logo=intel&amp;logoColor=white" style="max-width:100%;">
   <img src="https://img.shields.io/badge/RAM-8GB-%230071C5.svg?&amp;style=for-the-badge&amp;logoColor=white" style="max-width:100%;">
@@ -12,7 +11,7 @@ Akun Telegram: <a href="https://t.me/uzumakinagatotenshou">@wisnuduzu</a>
 
 ## Penjelasan Final Project
 
-Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/wisnuadipradana17_Tugas_Akhir.py">wisnuadipradana17_Tugas_Akhir.py</a></br>
+Full code jawaban pembahasan Tugas bisa dilihat di <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/Tugas%20Akhir.py">Tugas_Akhir.py</a></br>
 
 <details>
 <summary><strong>Penjelasan Data</strong></summary>
@@ -54,6 +53,11 @@ Diberikan hasil tabel berupa gambarnya sebagai berikut:
 <br>  
 </details>
 
-- Kemudian, datanya dimasukkan ke dalam database sql.
-- Kemudian, menggunakan sqlalchemy ORM untuk mengambil data yang ada pada sql tersebut.
-- Digunakan FastAPI untuk melakukan RestAPI.
+Data ketiga tabel tersebut dimasukkan ke dalam database SQL menggunakan modul pada Python yaitu SQLAlchemy yang dibuat di dalam fungsi `tabel_sql_jadi`.<br>
+
+Nah selanjutnya, tujuan dari tugas ini adalah menggunakan FastAPI untuk melakukan RestAPI.<br> Route-route POST yang dibuat dari FastAPI akan menggunggah file 
+<a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/users.csv">users.csv</a>
+dan <a href="https://github.com/wisnuadipradana/Final-Project---Dimaz-Wisnu-Adipradana---PBD-Sanbercode-Batch-40/blob/main/products.csv">products.csv</a>
+
+
+
